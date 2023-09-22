@@ -6,7 +6,11 @@
     <title>SPACEMAN</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="body">
+<body id="game-board">
+    <!-- <img id="all-lives-left" src="Screenshot all lives.png"> -->
+    <!-- <img id="lost-one-life" src="Screenshot -1 life.png">
+    <img id="lost-two-lives" src="Screenshot -2 lives.png">
+    <img id="lost-three-lives" src="Screenshot -3 lives.png"> -->
     <main>
         <h1 id="title">SPACEMAN</h1>
         <div>
@@ -27,7 +31,9 @@
         <button id="hint-button">HINT</button>
     </aside>  
     <footer>
-        <div id="unknown-words"></div>
+        <div>
+            <input type="text" id="hidden-word">
+        </div>
     </footer>
     <script src="node.js"></script>
 </body>
