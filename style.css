@@ -5,9 +5,23 @@
     background-size: cover;
 }  */
 
+#title,
+#lives,
+#score,
+#wrong-choices,
+#open-space {
+    color: white;
+}
 #game-board {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 600px
     }
+
+#open-space,
+#hidden-word {
+    height: 150px;
+    width: 200px;
+    font-size: larger;
+}
