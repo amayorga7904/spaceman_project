@@ -64,7 +64,7 @@ let playerChoice
 
 
 //CACHE ELEMENTS
-const openSpaceId = document.getElementById(OPEN_SPACE_ID)
+const openSpace = document.getElementById(OPEN_SPACE_ID)
 
 // Start button element
 const startButton = document.getElementById(START_BUTTON_ID)
@@ -97,11 +97,11 @@ startButton.addEventListener('click', initializeGame)
 // Event listener for the Hint button
 
 // Event listener for the key presses
-hiddenWord.addEventListener('keydown', determine)
+hiddenWord.addEventListener('keydown', getKeyCode)
 
 // Event listener for the gameboard
 
-
+const wordOptions = ['fish', 'pen', 'world']
 
 
 
@@ -135,14 +135,20 @@ function render(){
 
     wrongChoice.innerText = `WRONG CHOICES: ${wrongChoiceCount}`
 
-    // gamePlay()
+    gamePlay()
 }
-
+const easyWordList = ['fish', 'dinner', 'cat']
+const normalWordList = ['dictionary', 'catastrophe', 'humorous']
+const hardWord = 'pneumonoultramicroscopicsilicovolcanoconiosis'
+const currentWord = 'lsfjlskdflsk'
+const currentWordArray = currentWord.split('')
 // let openSpaceArray = openSpace.split('')
  //////GAMEPLAY 
  ////// use split to separate hidden word into array to get index
  ////// use include to determine if key pressed is the same as new hidden word array
-//  function gamePlay() {
+ function gamePlay() {
+openSpace.innerHTML = currentWordArray.map(() => `<li id="letter"></li>`).join('')
+// if (currentWordArray)
 //     if (playerChoice === currentWordArray.index0f('f')) {
     // console.log(currentWordArray)
     //     console.log(currentWordArray.indexOf('f'))
@@ -168,28 +174,34 @@ function render(){
     //////Display current lives
     /////if player choice picks key of hidden word, -1 life
 // determine()
-// }
-const openSpace = []
-const currentWord = 'fish'
-const currentWordArray = currentWord.split('')
-
-function determine(e) {
-const userChoice = e.key
-const index = currentWordArray.indexOf(userChoice)
-if (index !== -1) {
-    openSpace[index] = userChoice
-    hiddenWord.value = openSpace.join('')
-} else {
-    console.log('no')
 }
+ function getKeyCode(e) {
+    if (e.keyCode >= 65 && e.keyCode <= 90) {
+        if (currentWordArray.includes(e.key)) {
+           console.log(e.key)
+        }
+    }
+ }
+
+// function determine(e) {
+
+
+// const userChoice = e.key
+// const index = currentWordArray.indexOf(userChoice)
+// if (index !== -1) {
+//     openSpace[index] = userChoice
+//     hiddenWord.value = openSpace.join('')
+// } else {
+//     console.log('no')
+// }
 //     if (e.keyCode === 70) {
 //         openSpaceArray[0] = 'f'
-//     }
+
  
 // console.log(openSpace)
 // const deep = openSpace.split('')
 // console.log(deep)
-}
+// }
     //  && e.keyCode !== 72 && e.keyCode !== 73 && e.keyCode !== 83) {
     // if (e.keyCode === 65 || e.keyCode === 66 || e.keyCode === 67 || e.keyCode === 68 || e.keyCode === 69 || e.keyCode === 71 || e.keyCode === 74 || e.keyCode === 75 || e.keyCode === 76 || e.keyCode === 77 || e.keyCode === 78 || e.keyCode === 79 || e.keyCode === 80 || e.keyCode === 81 || e.keyCode === 82 || e.keyCode === 84 || e.keyCode === 85 || e.keyCode === 86 || e.keyCode === 87 || e.keyCode === 88 || e.keyCode === 89 || e.keyCode === 90) 
 //         openSpace.append(e.keyCode)

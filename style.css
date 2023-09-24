@@ -13,15 +13,59 @@
     color: white;
 }
 #game-board {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 600px
+    height: 600px;
+    font-size: 20px;
     }
 
-#open-space,
-#hidden-word {
-    height: 150px;
+#letter {
+    width: 50px;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 3px solid white;
+}
+
+#open-space {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#levels-and-hint {
+    display: grid;
+    grid-row-start: 3;
+    grid-column-start: 5;
+    gap: 50px;
+    height: 300px;
     width: 200px;
-    font-size: larger;
+}
+
+footer {
+    grid-row: 5 / 5;
+}
+
+#wrong-choices {
+    display: grid;
+    grid-row: 3;
+}
+
+#hidden-word {
+    height: 50px;
+    font-size: 40px;
+    width: 50px;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
