@@ -23,7 +23,7 @@
     width: 40px;
     font-size: 30px;
     text-align: center;
-    border-bottom: 5px solid white;
+    border-bottom: 2px solid white;
 }
 
 #open-space {
@@ -73,4 +73,9 @@ button {
     border-width: 5px;
     border-radius: 50%;
     border-color: rgb(255, 200, 55);
+}
+
+#word-section {
+    display: grid;
+    grid-row: auto;
 }
