@@ -24,19 +24,16 @@
     }
 
 #letter {
-    width: 50px;
-    font-size: 2rem;
+    width: 40px;
+    font-size: 30px;
     text-align: center;
-    margin-bottom: 40px;
-    border-bottom: 3px solid white;
+    border-bottom: 5px solid white;
 }
 
 #open-space {
     display: flex;
     gap: 20px;
     list-style: none;
-    justify-content: center;
-    align-items: center;
 }
 
 #levels-and-hint {
@@ -68,4 +65,8 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+button {
+    font-size: 20px;
 }
