@@ -99,6 +99,8 @@ let playerChoice
 
 
 //CACHE ELEMENTS
+const enterText = document.querySelector('.directions')
+
 const directions = document.getElementById(DIRECTIONS_ID)
 
 const openSpace = document.getElementById(OPEN_SPACE_ID)
@@ -148,6 +150,8 @@ hiddenWord.addEventListener('keydown', getKeyCode)
 const hintBox = document.getElementById(HINT_BOX_ID)
 
 // Event listener for the gameboard
+enterText.style.display = 'none'
+
 directions.style.display = 'none'
 
 easyButton.disabled = true
@@ -175,6 +179,7 @@ scoreDisplay.style.display = 'none'
 hiddenWord.style.display = 'none'
 //INVOKE INIT FUNCTIONS
 function initializeGame() {
+enterText.style.display = 'block'
 
 hiddenWord.style.display = 'block'
  // Reset the score to the initial value
