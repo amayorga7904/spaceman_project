@@ -24,10 +24,12 @@ const hardWord = 'epithelialization'
 const hardWordHint = 'a process of covering denuded epithelial surface'
 
 const OPEN_SPACE_ID = 'open-space'
+
+const NO_LIFE = 0
 // Initial player's score
 const INITIAL_SCORE = 0
 // Score needed to win
-const WINNING_SCORE = 0
+const WINNING_SCORE = 2
 // Initial count of lives set to 3
 const INITIAL_LIVES = 3
 // ID of the game board element
@@ -301,6 +303,12 @@ function getHardWord() {
 //         }
 //  }
 // }
+
+function resetWord() {
+    openSpace.innerText = ''
+    hintButton.innerText = 'HINT'
+}
+
 function isWordCompleted() {
     const wordDisplay = Array.from(openSpace.querySelectorAll('li')).map(li => li.innerText).join('')
     return wordDisplay === currentWord.join('').toUpperCase()
@@ -317,11 +325,12 @@ function getKeyCode(e) {
              console.log(e.key)
              if (isWordCompleted()) {
                 score++
+                resetWord()
              }
              
         } else {
             console.log('letter is not in array')
-            wrongChoiceCount += `${e.key}, `
+            wrongChoiceCount += `${e.key.toUpperCase()}, `
             gameBoard.style.backgroundImage = background3
             lives--
             switch (lives) {
@@ -341,6 +350,8 @@ function getKeyCode(e) {
     }
     e.preventDefault()
     render()
+    determineWinner()
+    // determineLoser()
 }
   // if (easyWordArray.includes(e.key) || easyWordArray.includes(e.key) || easyWordArray.includes(e.key)) {
 
@@ -421,12 +432,16 @@ function getHint() {
  // Set the wrong choices display to the current wrong choices
 
 ///////Reset hidden word container
-if ((score === WINNING_SCORE) || lives === 0) {
-    gameOver(true)
-} else {
-    gameOver(false)
+function determineWinner() {
+if (score >= WINNING_SCORE) {
+        gameOver(true)
 }
-
+else if (lives <= NO_LIFE) {
+    gameOver(false)
+} else {
+    render()
+}
+}
 
 
 
@@ -436,7 +451,7 @@ if ((score === WINNING_SCORE) || lives === 0) {
 
 
 
-REPLAY/RESTART
+//REPLAY/RESTART
 function gameOver(winner) {
     if (winner) {
 // Update the score display
@@ -455,6 +470,9 @@ score = INITIAL_SCORE
 
 // Clear the lives display
 lives = INITIAL_LIVES    
+
+openSpace.innerText = ''
+
 }
 
 
