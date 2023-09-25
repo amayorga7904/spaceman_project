@@ -7,7 +7,11 @@
 
 
 //DEFINE CONSTANTS
+const DIRECTIONS_ID = 'directions'
+
 const easyWordList = ['fish', 'dinner', 'cat']
+
+const easyWordListHints = ['a limbless cold-blooded vertebrate animal with gills and fins and living wholly in water', '', '']
 
 const normalWordList = ['dictionary', 'catastrophe', 'humorous']
 
@@ -84,6 +88,8 @@ let playerChoice
 
 
 //CACHE ELEMENTS
+const directions = document.getElementById(DIRECTIONS_ID)
+
 const openSpace = document.getElementById(OPEN_SPACE_ID)
 
 // Start button element
@@ -114,6 +120,7 @@ gameBoard.style.backgroundImage = background1
 // hiddenWord.value = ''
 
 //ADD EVENT LISTENERS
+
 // Event listener for the start button
 startButton.addEventListener('click', initializeGame)
 // Event listener for the Easy button
@@ -128,6 +135,8 @@ hardButton.addEventListener('click', getHardWord)
 hiddenWord.addEventListener('keydown', getKeyCode)
 
 // Event listener for the gameboard
+directions.style.display = 'none'
+
 easyButton.disabled = true
 
 normalButton.disabled = true
@@ -187,6 +196,8 @@ hiddenWord.style.display = 'block'
 livesDisplay.style.display = 'block'
 
 scoreDisplay.style.display = 'block'
+
+directions.style.display = 'block'
  // Clear the game board
 gameBoard.style.backgroundImage = background2
 
@@ -208,7 +219,7 @@ function render(){
 
     wrongChoice.innerText = `WRONG CHOICES: ${wrongChoiceCount}`
 
-    gamePlay()
+    // gamePlay()
 }
 
 
@@ -251,19 +262,19 @@ function render(){
     
 
 function getEasyWordList() {
-    openSpace.innerHTML = easyWordArray.map(() => `<li id="letter"></li>`).join('')
+    openSpace.innerHTML = easyWordArray.map(() => `<li id="letter"> </li>`).join('')
     currentWord = easyWordArray
     console.log(currentWord)
 }
 
 function getNormalWordList() {
-    openSpace.innerHTML = normalWordArray.map(() => `<li id="letter"></li>`).join('')
+    openSpace.innerHTML = normalWordArray.map(() => `<li id="letter"> </li>`).join('')
     currentWord = normalWordArray
     console.log(currentWord)
 }
 
 function getHardWord() {
-    openSpace.innerHTML = hardWordArray.map(() => `<li id="letter"></li>`).join('')
+    openSpace.innerHTML = hardWordArray.map(() => `<li id="letter"> </li>`).join('')
     currentWord = hardWordArray
     console.log(currentWord)
 }
@@ -312,7 +323,8 @@ function getKeyCode(e) {
     } else {
         console.log('enter a letter')
     }
-    // determine()
+    e.preventDefault()
+    render()
 }
 
 // function determine() {
@@ -323,18 +335,18 @@ function getKeyCode(e) {
 //     }
 // }
 
-function gamePlay() {
+// function gamePlay() {
 
-    getEasyWordList
+//     getEasyWordList()
 
-    getNormalWordList
+//     getNormalWordList()
 
-    getHardWord
+//     getHardWord()
 
-    getKeyCode
+//     getKeyCode()
 
-    // determine
-}
+//     // determine
+// }
 // const userChoice = e.key
 // const index = currentWordArray.indexOf(userChoice)
 // if (index !== -1) {

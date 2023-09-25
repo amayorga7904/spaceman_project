@@ -5,11 +5,7 @@
     background-size: cover;
 }  */
 
-#title,
-#lives,
-#score,
-#wrong-choices,
-#open-space {
+* {
     color: white;
 }
 #game-board {
@@ -19,7 +15,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 600px;
+    height: 1000px;
     font-size: 20px;
     }
 
@@ -58,6 +54,10 @@ footer {
     height: 50px;
     font-size: 40px;
     width: 50px;
+    background-color: rgb(0, 0, 0);
+    border-width: 5px;
+    border-radius: 20%;
+    border-color: rgb(255, 200, 55);
 }
 
 h1 {
@@ -69,4 +69,8 @@ h1 {
 
 button {
     font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    border-width: 5px;
+    border-radius: 50%;
+    border-color: rgb(255, 200, 55);
 }
