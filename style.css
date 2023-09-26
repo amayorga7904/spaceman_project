@@ -11,9 +11,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 900px;
+    height: 100vh;
     font-size: 20px;
-    margin: 0 40px 0 10px;
+    margin: 0 40px 0 40px;
     }
 
 #letter {
@@ -21,30 +21,34 @@
     font-size: 30px;
     text-align: center;
     border-bottom: 2px solid white;
+    color:rgb(255, 200, 55)
 }
 
 #open-space {
     display: flex;
     gap: 20px;
     list-style: none;
+    margin-top: 100px
 }
 
 #levels-and-hint {
     display: grid;
     grid-row-start: 3;
     grid-column-start: 5;
-    gap: 50px;
+    gap: 20px;
     height: 300px;
     width: 200px;
 }
 
 footer {
-    grid-row: 5 / 5;
+    grid-row: 4;
 }
 
 #wrong-choices {
     display: grid;
-    grid-row: 3;
+    grid-column-start: 5;
+    grid-row-start: 2;
+    padding: 70px 0 0 0;
 }
 
 #hidden-word {
@@ -58,10 +62,7 @@ footer {
 }
 
 h1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   margin: 0 0 100px 0;
 }
 
 button {
@@ -75,5 +76,9 @@ button {
 #word-section {
     display: grid;
     grid-row: auto;
+    
 }
 
+main {
+    grid-row-start: 2;
+}
