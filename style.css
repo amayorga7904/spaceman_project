@@ -75,10 +75,45 @@ button {
 
 #word-section {
     display: grid;
-    grid-row: auto;
     
 }
 
 main {
     grid-row-start: 2;
 }
+
+@media screen and (max-width: 375px) {
+    #game-board {
+        grid-template-columns: 30% 40% 30%;
+        grid-template-rows: 25% 25% 25% 25%;
+        height: 700px;
+        background-size: inherit;
+    }
+    main {
+        grid-row-start: 1;    
+    }
+    footer {
+        grid-row-start: 2;
+    }
+    #levels-and-hint {
+        display: grid;
+        grid-column-start: .5;
+        grid-column-end: 2.5;
+    }
+    #directions {
+        margin: 0 0 0 35px;
+    }
+    #letter {
+        width: 12px;
+        font-size: 20px;
+        text-align: center;
+        border-bottom: 2px solid white;
+        color:rgb(255, 200, 55)
+    }
+    #open-space {
+        margin: 123px 0 0 -76px;
+    }
+    button {
+        width: 200px;
+    }
+    }
