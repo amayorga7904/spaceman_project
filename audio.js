@@ -1,0 +1,1 @@
+const myAudio = new Audio('y2mate.is - Workaholics I almost died -Cg_HDcStklc-128k-1695770670.mp3')

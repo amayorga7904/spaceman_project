@@ -1,11 +1,10 @@
 
 
-
-
+const AUDIO = myAudio
 const NO_LIFE = 0
 const INITIAL_SCORE = 0
 const WINNING_SCORE = 2
-const INITIAL_LIVES = 3
+const INITIAL_LIVES = 4
 const SCORE_ID = 'score'
 const LIVES_ID = 'lives'
 const HINT_ID = 'hint-here'
@@ -115,6 +114,7 @@ function initializeGame() {
     hint.style.display = 'block'
     gameBoard.style.backgroundImage = background2
     wrongChoiceCount = ''
+    title.innerText = 'SPACEMAN'
     render()
 }
 
@@ -170,11 +170,14 @@ function getKeyCode(e) {
             gameBoard.style.backgroundImage = background3
             lives--
             switch (lives) {
-                case 1:
+                case 2:
                 gameBoard.style.backgroundImage = background4;
                 break;
-                case 0:
+                case 1:
                 gameBoard.style.backgroundImage = background5;
+                break;
+                case 0:
+                gameBoard.style.backgroundImage = background6;
                 break;
                 default:
                 console.log('Error');
@@ -214,9 +217,10 @@ function determineWinner() {
 
 function gameOver(winner) {
     if (winner) {
-    scoreDisplay.innerText = 'Congrats! You Won!'
+    title.innerText = 'Congrats! You Won!'
+    AUDIO.play()
     } else {
-    scoreDisplay.innerText = 'Congrats! You lost!'
+    title.innerText = 'Congrats! You lost!'
     }
     startButton.innerText = 'Replay'
     startButton.style.display = 'block'
