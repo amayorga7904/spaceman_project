@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 20% 20% 20% 20% 20%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -48,7 +48,7 @@ footer {
     display: grid;
     grid-column-start: 5;
     grid-row-start: 2;
-    padding: 70px 0 0 0;
+    padding-top: 70px 0 0 0;
 }
 
 #hidden-word {
@@ -62,7 +62,7 @@ footer {
 }
 
 h1 {
-   margin: 0 0 100px 0;
+   margin-bottom: 100px;
 }
 
 button {
@@ -73,21 +73,19 @@ button {
     border-color: rgb(255, 200, 55);
 }
 
-#word-section {
-    display: grid;
-    
-}
 
 main {
     grid-row-start: 2;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px), (max-height: 300px) {
     #game-board {
         grid-template-columns: 30% 40% 30%;
         grid-template-rows: 25% 25% 25% 25%;
+        background-repeat: repeat;
         height: 700px;
         background-size: inherit;
+        font-size: 15px;
     }
     main {
         grid-row-start: 1;    
@@ -97,11 +95,11 @@ main {
     }
     #levels-and-hint {
         display: grid;
-        grid-column-start: .5;
-        grid-column-end: 2.5;
+        grid-column-start: 4;
+        grid-row-start: 2;
     }
     #directions {
-        margin: 0 0 0 35px;
+        margin-left: 35px;
     }
     #letter {
         width: 12px;
@@ -111,9 +109,21 @@ main {
         color:rgb(255, 200, 55)
     }
     #open-space {
-        margin: 123px 0 0 -76px;
+        margin: 329px 0 0 -76px;
     }
     button {
-        width: 200px;
+        width: 120px;
+        margin: 0 0 0 25px;
+        font-size: 12px;
+    }
+    #wrong-choices {
+        grid-column-start: 4;
+        grid-row-start: 1;
+    }
+    #hidden-word {
+        height: 35px;
+        width: 35px;
     }
     }
+
+    
