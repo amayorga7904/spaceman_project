@@ -21,26 +21,28 @@ const HIDDEN_WORD_ID = 'hidden-word'
 const WRONG_CHOICES_ID = 'wrong-choices'
 const TITLE_ID = 'title'
 
-const easyWordList = ['fish', 'dinner', 'cat']
-const easyWordListHints = ['a limbless cold-blooded vertebrate animal with gills and fins and living wholly in water', 'the main meal of the day', 'a small domesticated carnivorous mammal with soft fur, a short snout, and retractable claws']
-const normalWordList = ['dictionary', 'catastrophe', 'humorous']
-const normalWordListHints = ['a book or electronic resource that lists the words of a language and gives their meaning', 'an event causing great and often sudden damage or suffering', 'causing lighthearted laughter and amusement']
-const hardWord = 'epithelialization'
-const hardWordHint = 'a process of covering denuded epithelial surface'
-
+const easyWordList = ['fish', 'dinner', 'cat', 'bowl', 'juice', 'candle']
+const easyWordListHints = ['a limbless cold-blooded vertebrate animal with gills and fins and living wholly in water', 'the main meal of the day', 'a small domesticated carnivorous mammal with soft fur, a short snout, and retractable claws', 'a round, deep dish or basin used for food or liquid', 'the liquid obtained from or present in fruit or vegetables', 'a cylinder or block of wax or tallow with a central wick that is lit to produce light as it burns']
+const normalWordList = ['dictionary', 'catastrophe', 'humorous', 'dishonest', 'imbibe', 'tranlucent']
+const normalWordListHints = ['a book or electronic resource that lists the words of a language and gives their meaning', 'an event causing great and often sudden damage or suffering', 'causing lighthearted laughter and amusement', 'behaving or prone to behave in an untrustworthy or fraudulent way', 'absorb or assimilate (ideas or knowledge)', 'allowing light, but not detailed shapes, to pass through']
+const hardWordList = ['epithelialization', 'fundamentalistic', 'agammaglobulinemia']
+const hardWordListHints = ['a process of covering denuded epithelial surface', 'someone who believes in traditional forms of a religion, or believes that what is written in a holy book', 'a rare inherited immunodeficiency disorder characterized by low or absent mature B cells']
 
 const easyWordIndex = Math.floor(Math.random() * easyWordList.length)
 const easyWord = easyWordList[easyWordIndex]
 const easyHint = easyWordListHints[easyWordIndex]
 const easyWordArray = easyWord.split('')
 
+
 const normalWordIndex = Math.floor(Math.random() * normalWordList.length)
 const normalWord = normalWordList[normalWordIndex]
 const normalHint = normalWordListHints[normalWordIndex]
 const normalWordArray = normalWord.split('')
 
+const hardWordIndex = Math.floor(Math.random() * hardWordList.length)
+const hardWord = hardWordList[hardWordIndex]
+const hardHint = hardWordListHints[hardWordIndex]
 const hardWordArray = hardWord.split('')
-const hardHint = hardWordHint
 
 
 let currentWord
