@@ -74,13 +74,13 @@ hintButton.addEventListener('click', getHint)
 hiddenWord.addEventListener('keydown', getKeyCode)
 
 
-hint.style.display = 'none'
-enterText.style.display = 'none'
-directions.style.display = 'none'
 easyButton.disabled = true
 normalButton.disabled = true
 hardButton.disabled = true
 hintButton.disabled = true
+hint.style.display = 'none'
+enterText.style.display = 'none'
+directions.style.display = 'none'
 easyButton.style.display = 'none'
 normalButton.style.display = 'none'
 hardButton.style.display = 'none'
@@ -94,16 +94,16 @@ myAudio.volume = 0.5
 
 
 function initializeGame() {
-    enterText.style.display = 'block'
-    hiddenWord.style.display = 'block'
+    console.log('hello')
     score = INITIAL_SCORE
     lives = INITIAL_LIVES
     startButton.disabled = true
     easyButton.disabled = false
     normalButton.disabled = false
     hardButton.disabled = false
-    hintButton.disabled = false
     startButton.style.display = 'none'
+    enterText.style.display = 'block'
+    hiddenWord.style.display = 'block'
     easyButton.style.display = 'block'
     normalButton.style.display = 'block'
     hardButton.style.display = 'block'
@@ -133,16 +133,19 @@ function render(){
 function getEasyWordList() {
     openSpace.innerHTML = easyWordArray.map(() => `<li id="letter">&nbsp;</li>`).join('')
     currentWord = easyWordArray
+    hintButton.disabled = false
 }
 
 function getNormalWordList() {
     openSpace.innerHTML = normalWordArray.map(() => `<li id="letter">&nbsp;</li>`).join('')
     currentWord = normalWordArray
+    hintButton.disabled = false
 }
 
 function getHardWord() {
     openSpace.innerHTML = hardWordArray.map(() => `<li id="letter">&nbsp;</li>`).join('')
     currentWord = hardWordArray
+    hintButton.disabled = false
 }
 
 
@@ -184,7 +187,6 @@ function getKeyCode(e) {
                 gameBoard.style.backgroundImage = background6;
                 break;
                 default:
-                console.log('Error');
                 break;
             }
         }
@@ -223,6 +225,32 @@ function gameOver(winner) {
     if (winner) {
     scoreDisplay.innerText = 'Congrats! You Won!'
     myAudio.play()
+
+
+    playPic1()
+
+
+    // playPic2()
+    // playPic3()
+    // playPic4()
+    // playPic5()
+    // playPic6()
+    // playPic7()
+    // playPic8()
+    // playPic9()
+    // playPic10()
+    // playPic11()
+    // playPic12()
+    // playPic13()
+    // playPic14()
+    // playPic15()
+    // playPic16()
+    // playPic17()
+    // playPic18()
+    // playPic19()
+    // playPic20()
+    // playPic21()
+    // playPic22()
     } else {
     scoreDisplay.innerText = 'Congrats! You lost!'
     }
