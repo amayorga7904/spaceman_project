@@ -219,47 +219,22 @@ function determineWinner() {
         render()
     }
 }
-
+  
 
 function gameOver(winner) {
     if (winner) {
     scoreDisplay.innerText = 'Congrats! You Won!'
     myAudio.play()
-
-
     playPic1()
-
-
-    // playPic2()
-    // playPic3()
-    // playPic4()
-    // playPic5()
-    // playPic6()
-    // playPic7()
-    // playPic8()
-    // playPic9()
-    // playPic10()
-    // playPic11()
-    // playPic12()
-    // playPic13()
-    // playPic14()
-    // playPic15()
-    // playPic16()
-    // playPic17()
-    // playPic18()
-    // playPic19()
-    // playPic20()
-    // playPic21()
-    // playPic22()
     } else {
     scoreDisplay.innerText = 'Congrats! You lost!'
-    }
     startButton.innerText = 'Replay'
     startButton.style.display = 'block'
     startButton.disabled = false
     score = INITIAL_SCORE
     lives = INITIAL_LIVES    
     openSpace.innerText = ''
+}    
 }
 
 
