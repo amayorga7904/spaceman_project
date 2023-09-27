@@ -1,9 +1,10 @@
 
 
-const AUDIO = myAudio
+
+
 const NO_LIFE = 0
 const INITIAL_SCORE = 0
-const WINNING_SCORE = 2
+const WINNING_SCORE = 1
 const INITIAL_LIVES = 4
 const SCORE_ID = 'score'
 const LIVES_ID = 'lives'
@@ -89,6 +90,7 @@ livesDisplay.style.display = 'none'
 scoreDisplay.style.display = 'none'
 hiddenWord.style.display = 'none'
 gameBoard.style.backgroundImage = background1
+myAudio.volume = 0.5
 
 
 function initializeGame() {
@@ -115,6 +117,8 @@ function initializeGame() {
     gameBoard.style.backgroundImage = background2
     wrongChoiceCount = ''
     title.innerText = 'SPACEMAN'
+    myAudio.pause()
+    myAudio.currentTime = 0
     render()
 }
 
@@ -217,10 +221,10 @@ function determineWinner() {
 
 function gameOver(winner) {
     if (winner) {
-    title.innerText = 'Congrats! You Won!'
-    AUDIO.play()
+    scoreDisplay.innerText = 'Congrats! You Won!'
+    myAudio.play()
     } else {
-    title.innerText = 'Congrats! You lost!'
+    scoreDisplay.innerText = 'Congrats! You lost!'
     }
     startButton.innerText = 'Replay'
     startButton.style.display = 'block'
