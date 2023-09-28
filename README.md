@@ -25,7 +25,7 @@ function getKeyCode(e) {
 
 I had a hard time with the keys in general. I had to find out which key was pressed, then see if they matched the letters in the word, display the letter in the right spot on the screen or place the wrong letter in a different part of the screen. Once this was figured out, the rest was not so bad. 
 
-####KEY TAKEAWAY
+#### KEY TAKEAWAY
 
 Building a detailed pseudocode comes a long way. Although mine missed a few pieces, it made the coding processes fairly simple, almost like a code-along. I was able to code the rest of the game when I was stuck, and go back to it later.
 
@@ -41,9 +41,9 @@ Building a detailed pseudocode comes a long way. Although mine missed a few piec
 
 ## GAMEPLAY
 
-![STARTSCREEN](Screenshot 2023-09-28 at 9.53.14 AM.png)
-![HOMESCREEN](Screenshot 2023-09-28 at 9.52.50 AM.png)
-![GAMEPLAY](Screenshot 2023-09-28 at 9.54.42 AM.png)
-![LOSER-SCREEN](Screenshot 2023-09-28 at 9.55.09 AM.png)
-![ANOTHER-GAMEPLAY](Screenshot 2023-09-28 at 9.56.07 AM.png)
-![WINNER-SCREEN](Screenshot 2023-09-28 at 9.56.24 AM.png)
+[STARTSCREEN](/Users/alexmayorga/code/spaceman_project/Screenshot 2023-09-28 at 9.53.14 AM.png)
+[HOMESCREEN](/Users/alexmayorga/code/spaceman_project/Screenshot 2023-09-28 at 9.52.50 AM.png)
+[GAMEPLAY](/Users/alexmayorga/code/spaceman_project/Screenshot 2023-09-28 at 9.54.42 AM.png)
+[LOSER-SCREEN](/Users/alexmayorga/code/spaceman_project/Screenshot 2023-09-28 at 9.55.09 AM.pngg)
+[ANOTHER-GAMEPLAY](/Users/alexmayorga/code/spaceman_project/Screenshot 2023-09-28 at 9.56.07 AM.png)
+[WINNER-SCREEN](/Users/alexmayorga/code/spaceman_project/Screenshot 2023-09-28 at 9.56.24 AM.png)
