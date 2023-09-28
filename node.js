@@ -133,19 +133,25 @@ function render(){
 
 
 function getEasyWordList() {
-    openSpace.innerHTML = easyWordArray.map(() => `<li id="letter">&nbsp;</li>`).join('')
+    openSpace.innerHTML = easyWordArray.map(function() {
+        return '<li id="letter">&nbsp;</li>'
+    }).join('')
     currentWord = easyWordArray
     hintButton.disabled = false
 }
 
 function getNormalWordList() {
-    openSpace.innerHTML = normalWordArray.map(() => `<li id="letter">&nbsp;</li>`).join('')
+    openSpace.innerHTML = normalWordArray.map(function() {
+        return '<li id="letter">&nbsp;</li>'
+    }).join('')
     currentWord = normalWordArray
     hintButton.disabled = false
 }
 
 function getHardWord() {
-    openSpace.innerHTML = hardWordArray.map(() => `<li id="letter">&nbsp;</li>`).join('')
+    openSpace.innerHTML = hardWordArray.map(function() {
+        return '<li id="letter">&nbsp;</li>'
+    }).join('')
     currentWord = hardWordArray
     hintButton.disabled = false
 }
@@ -157,39 +163,43 @@ function resetWord() {
 
 
 function isWordCompleted() {
-    const wordDisplay = Array.from(openSpace.querySelectorAll('li')).map(li => li.innerText).join('')
+    const wordDisplay = Array.from(openSpace.querySelectorAll('li')).map(function(li) {
+        return li.innerText
+    }).join('')
     return wordDisplay === currentWord.join('').toUpperCase()
 }
-
 
 function getKeyCode(e) {
     if (e.keyCode >= 65 && e.keyCode <= 90) {
         if (currentWord.includes(e.key)) {
-            currentWord.forEach((letter, i) => {
-                if(letter === e.key) {
+            currentWord.forEach(function(letter, i) {
+                if (letter === e.key) {
                     openSpace.querySelectorAll('li')[i].innerText = letter.toUpperCase()
                 }
             })
-             if (isWordCompleted()) {
+
+            if (isWordCompleted()) {
                 score++
-                setTimeout(() => {resetWord()}, 1000)
-             }
+                setTimeout(function() {
+                    resetWord()
+                }, 1000)
+            }
         } else {
-            wrongChoiceCount += `${e.key.toUpperCase()}, `
+            wrongChoiceCount += e.key.toUpperCase() + ', '
             gameBoard.style.backgroundImage = background3
             lives--
             switch (lives) {
                 case 2:
-                gameBoard.style.backgroundImage = background4;
-                break;
+                    gameBoard.style.backgroundImage = background4
+                    break
                 case 1:
-                gameBoard.style.backgroundImage = background5;
-                break;
+                    gameBoard.style.backgroundImage = background5
+                    break
                 case 0:
-                gameBoard.style.backgroundImage = background6;
-                break;
+                    gameBoard.style.backgroundImage = background6
+                    break
                 default:
-                break;
+                    break
             }
         }
     } else {
@@ -197,8 +207,9 @@ function getKeyCode(e) {
     }
     e.preventDefault()
     render()
-    determineWinner()  
+    determineWinner()
 }
+
   
 
 function getHint() {

@@ -71,129 +71,148 @@ function playPic1() {
     setTimeout(function() {
     playPic2()
     }, 1000)
-
 }
+
 function playPic2() {
     setTimeout(function() {
     gameBoard.style.backgroundImage = pic2
     playPic3()
 }, 1000)
 }
+
 function playPic3() {
     setTimeout(function() {
     gameBoard.style.backgroundImage = pic3
     playPic4()
 }, 1000)
 }
+
 function playPic4() {
     setTimeout(function() {
     gameBoard.style.backgroundImage = pic4
     playPic5()
 }, 1000)
 }
+
 function playPic5() {
     setTimeout(function() {
     gameBoard.style.backgroundImage = pic5
     playPic6()
 }, 1000)
 }
+
 function playPic6() {
     setTimeout(function() {
     gameBoard.style.backgroundImage = pic6
     playPic7()
 }, 1000)
 }
+
 function playPic7() {
     setTimeout(function() {
     gameBoard.style.backgroundImage = pic7
     playPic8()
 }, 1000)
 }
+
 function playPic8() {
     setTimeout(function() {
     gameBoard.style.backgroundImage = pic8
     playPic9()
 }, 1000)
 }
+
 function playPic9() {
     setTimeout(function() {
     gameBoard.style.backgroundImage = pic9
     playPic10()
 }, 1000)
 }
+
 function playPic10() {
     setTimeout(function() {
     gameBoard.style.backgroundImage = pic10
     playPic11()
 }, 1000)
 }
+
 function playPic11() {
     setTimeout(function() {
     gameBoard.style.backgroundImage = pic11
     playPic12()
 }, 1000)
 }
+
 function playPic12() {
     setTimeout(function() {
     gameBoard.style.backgroundImage = pic12
     playPic13()
 }, 1000)
 }
+
 function playPic13() {
     setTimeout(function() {
     gameBoard.style.backgroundImage = pic13
     playPic14()
 }, 1000)
 }
+
 function playPic14() {
     setTimeout(function() {
     gameBoard.style.backgroundImage = pic14
     playPic15()
 }, 1000)
 }
+
 function playPic15() {
     setTimeout(function() {
     gameBoard.style.backgroundImage = pic15
     playPic16()
 }, 1000)
 }
+
 function playPic16() {
     setTimeout(function() {
     gameBoard.style.backgroundImage = pic16
     playPic17()
 }, 1000)
 }
+
 function playPic17() {
     setTimeout(function() {
     gameBoard.style.backgroundImage = pic17
     playPic18()
 }, 1000)
 }
+
 function playPic18() {
     setTimeout(function() {
     gameBoard.style.backgroundImage = pic18
     playPic19()
 }, 1000)
 }
+
 function playPic19() {
     setTimeout(function() {
     gameBoard.style.backgroundImage = pic19
     playPic20()
 }, 1000)
 }
+
 function playPic20() {
     setTimeout(function() {
     gameBoard.style.backgroundImage = pic20
     playPic21()
 }, 1000)
 }
+
 function playPic21() {
     setTimeout(function() {
     gameBoard.style.backgroundImage = pic21
     playPic22()
 }, 1000)
-
 }
+
 function playPic22() {
     setTimeout(function() {
     gameBoard.style.backgroundImage = pic22
@@ -205,50 +224,3 @@ startButton.innerText = 'Replay'
     lives = INITIAL_LIVES    
     openSpace.innerText = ''
 }
-
-
-// playPic22(function() {
-//     playPic21(function() {
-//         playPic20(function() {
-//             playPic19(function() {
-//                 playPic18(function() {
-//                     playPic17(function() {
-//                         playPic16(function() {
-//                             playPic15(function() {
-//                                 playPic14(function() {
-//                                     playPic13(function() {
-//                                         playPic12(function() {
-//                                             playPic11(function() {
-//                                                 playPic10(function() {
-//                                                     playPic9(function() {
-//                                                         playPic8(function() {
-//                                                             playPic7(function() {
-//                                                                 playPic6(function() {
-//                                                                     playPic5(function() {
-//                                                                         playPic4(function() {
-//                                                                             playPic3(function() {
-//                                                                                 playPic2(function() {
-//                                                                                     playPic1(function() {
-    
-//                                                                                     })
-//                                                                                 })
-//                                                                             })
-//                                                                         })
-//                                                                     })
-//                                                                 })
-//                                                             })
-//                                                         })
-//                                                     })
-//                                                 })
-//                                             })
-//                                         })
-//                                     })
-//                                 })
-//                             })
-//                         })
-//                     })
-//                 })
-//             })
-//         })
-//     })
-// })

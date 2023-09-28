@@ -36,6 +36,10 @@ Building a detailed pseudocode comes a long way. Although mine missed a few piec
 [![GitHub](https://img.shields.io/badge/GitHub-Version%20Control-lightgrey)](https://github.com/)
 [![Slack](https://img.shields.io/badge/Slack-Communication-brightgreen)](https://slack.com/)
 [![Dev.to](https://img.shields.io/badge/Dev.to-Community-orange)](https://dev.to/)
+![Zoom](https://img.shields.io/badge/Zoom-2D8CFF?style=for-the-badge&logo=zoom&logoColor=white)
+![macOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white)
+![Apple Music](https://img.shields.io/badge/apple%20music-F34E68?style=for-the-badge&logo=apple%20music&logoColor=white)
+
 
 ## GAMEPLAY
 
@@ -45,3 +49,14 @@ Building a detailed pseudocode comes a long way. Although mine missed a few piec
 ![LOSER-SCREEN](screenshots/Screenshot%202023-09-28%20at%209.55.09%20AM.png)
 ![ANOTHER-GAMEPLAY](screenshots/Screenshot%202023-09-28%20at%209.56.07%20AM.png)
 ![WINNER-SCREEN](screenshots/Screenshot%202023-09-28%20at%209.56.24%20AM.png)
+
+
+## NEXT STEPS
+
+* I want to be able to allow the player to press on the difficulty button multiple times before refreshing game, and be able to get different words and there associated hints
+
+* The stop motion could use more frames in between to make it more fluid 
+
+* To add more lives, I need to add more illustrations of the Spaceman
+
+* Add sound to buttons
