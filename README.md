@@ -25,11 +25,11 @@ function getKeyCode(e) {
 
 I had a hard time with the keys in general. I had to find out which key was pressed, then see if they matched the letters in the word, display the letter in the right spot on the screen or place the wrong letter in a different part of the screen. Once this was figured out, the rest was not so bad. 
 
-###KEY TAKEAWAY
+####KEY TAKEAWAY
 
 Building a detailed pseudocode comes a long way. Although mine missed a few pieces, it made the coding processes fairly simple, almost like a code-along. I was able to code the rest of the game when I was stuck, and go back to it later.
 
-#TECHNOLOGIES USED 
+##TECHNOLOGIES-USED 
 [GITHUB](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 [SLACK](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)
 [ZOOM](https://img.shields.io/badge/Zoom-2D8CFF?style=for-the-badge&logo=zoom&logoColor=white)
@@ -39,11 +39,11 @@ Building a detailed pseudocode comes a long way. Although mine missed a few piec
 [CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
 [JAVASCRIPT](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-#GAMEPLAY
+##GAMEPLAY
 
-[](Screenshot 2023-09-28 at 9.53.14 AM.png)
-[](Screenshot 2023-09-28 at 9.52.50 AM.png)
-[](Screenshot 2023-09-28 at 9.54.42 AM.png)
-[](Screenshot 2023-09-28 at 9.55.09 AM.png)
-[](Screenshot 2023-09-28 at 9.56.07 AM.png)
-[](Screenshot 2023-09-28 at 9.56.24 AM.png)
+[STARTSCREEN](Screenshot 2023-09-28 at 9.53.14 AM.png)
+[HOMESCREEN](Screenshot 2023-09-28 at 9.52.50 AM.png)
+[GAMEPLAY](Screenshot 2023-09-28 at 9.54.42 AM.png)
+[LOSER-SCREEN](Screenshot 2023-09-28 at 9.55.09 AM.png)
+[ANOTHER-GAMEPLAY](Screenshot 2023-09-28 at 9.56.07 AM.png)
+[WINNER-SCREEN](Screenshot 2023-09-28 at 9.56.24 AM.png)
