@@ -217,10 +217,15 @@ function playPic22() {
     setTimeout(function() {
     gameBoard.style.backgroundImage = pic22
 }, 1000)
-startButton.innerText = 'Replay'
+    startButton.innerText = 'Replay'
     startButton.style.display = 'block'
     startButton.disabled = false
     score = INITIAL_SCORE
     lives = INITIAL_LIVES    
     openSpace.innerText = ''
+    hint.innerText = 'HINT'
+    easyButton.disabled = true
+    normalButton.disabled = true
+    hardButton.disabled = true
+    hintButton.disabled = true
 }
