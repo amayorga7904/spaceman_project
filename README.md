@@ -4,6 +4,16 @@ This game a basically a game of hangman. First, after starting the game, you sel
 
 [play it here](https://amayorga7904.github.io/spaceman_project/)
 
+## FEATURES
+
+* 3 different difficulties
+
+* hints for each word
+
+* option to replay if won or lost
+
+* awesome stop motion 
+
 ### FAVORITE FUNCTION 
 
 ```js
