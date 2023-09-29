@@ -56,3 +56,5 @@ Building a detailed pseudocode comes a long way. Although mine missed a few piec
 * To add more lives, I need to add more illustrations of the Spaceman
 
 * Add sound to buttons
+
+* Add a timer 

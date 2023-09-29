@@ -245,7 +245,7 @@ function gameOver(winner) {
         score = INITIAL_SCORE
         lives = INITIAL_LIVES    
         openSpace.innerText = ''
-        hint.innerText = 'HINT'
+        hint.innerText = 'HINT:'
         easyButton.disabled = true
         normalButton.disabled = true
         hardButton.disabled = true
