@@ -7,18 +7,14 @@ This game a basically a game of hangman. First, after starting the game, you sel
 ### FAVORITE FUNCTION 
 
 ```js
-
 function getKeyCode(e) {
     if (e.keyCode >= 65 && e.keyCode <= 90) {
         if (currentWord.includes(e.key)) {
-            currentWord.forEach((letter, i) => {
-                if(letter === e.key) {
+            currentWord.forEach(function(letter, i) {
+                if (letter === e.key) {
                     openSpace.querySelectorAll('li')[i].innerText = letter.toUpperCase()
                 }
             })
-        }
-    }
-}
 ```
 
 ### BIGGEST CHALLENGE

@@ -177,7 +177,6 @@ function getKeyCode(e) {
                     openSpace.querySelectorAll('li')[i].innerText = letter.toUpperCase()
                 }
             })
-
             if (isWordCompleted()) {
                 score++
                 setTimeout(function() {
@@ -236,18 +235,18 @@ function determineWinner() {
 
 function gameOver(winner) {
     if (winner) {
-    scoreDisplay.innerText = 'Congrats! You Won!'
-    myAudio.play()
-    playPic1()
+        scoreDisplay.innerText = 'Congrats! You Won!'
+        myAudio.play()
+        playPic1()
     } else {
-    scoreDisplay.innerText = 'Congrats! You lost!'
-    startButton.innerText = 'Replay'
-    startButton.style.display = 'block'
-    startButton.disabled = false
-    score = INITIAL_SCORE
-    lives = INITIAL_LIVES    
-    openSpace.innerText = ''
-}    
+        scoreDisplay.innerText = 'Congrats! You lost!'
+        startButton.innerText = 'Replay'
+        startButton.style.display = 'block'
+        startButton.disabled = false
+        score = INITIAL_SCORE
+        lives = INITIAL_LIVES    
+        openSpace.innerText = ''
+    }    
 }
 
 
