@@ -42,7 +42,7 @@ Building a detailed pseudocode comes a long way. Although mine missed a few piec
 ![STARTSCREEN](screenshots/Screenshot%202023-09-28%20at%209.53.14%20AM.png)
 ![HOMESCREEN](screenshots/Screenshot%202023-09-28%20at%209.52.50%20AM.png)
 ![GAMEPLAY](screenshots/Screenshot%202023-09-28%20at%209.54.42%20AM.png)
-![LOSER-SCREEN](screenshots/Screenshot%202023-09-28%20at%209.55.09%20AM.png)
+![LOSER-SCREEN](screenshots/Screenshot%202023-09-28%20at%203.27.47%20PM%20(2).png)
 ![ANOTHER-GAMEPLAY](screenshots/Screenshot%202023-09-28%20at%209.56.07%20AM.png)
 ![WINNER-SCREEN](screenshots/Screenshot%202023-09-28%20at%209.56.24%20AM.png)
 
